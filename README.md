@@ -11,8 +11,6 @@ Adicionalmente, você deverá ter contato com alguns elementos da STL (_Standard
 
 # Suas Tarefas
 
-Nesse exercício você deve implementar todos os itens solicitados na lista de exercício disponível [aqui](docs/lista_01.pdf).
-
 Para facilitar a implementação de suas respostas, você vai encontrar nesse repositório o código de suporte organizado em várias pastas, uma para cada questão da lista. Esse código já está preparado para compilar cada projeto individualmente através do uso de `cmake` e contém indicações sobre o que você precisa alterar através de comentários como `// TODO` espalhados por alguns arquivos `.cpp` e `.h`. Para você usufruir dessa infraestrutura de compilação e testagem disponível, é importante que você **não altere nenhum arquivo além do que for indicado nesse documento**.
 
 Em resumo, sua tarefa consiste em:
@@ -25,7 +23,7 @@ Em resumo, sua tarefa consiste em:
 Nessa seção abordamos o procedimento necessário para compilar e executar o código inicial fornecido com o exercício.
 
 ## Tipos de Questões
-Conforme explicado no [PDF da lista de exercício](docs/lista_01.pdf) existem duas categorias de exercícios: implementação de **programa** e implementação de **função**.
+Existem duas categorias de exercícios: implementação de **programa** e implementação de **função**.
 
 Para os exercícios que solicitam a implementação de um programa, você deve editar apenas o arquivo `src/main.cpp`. Se você desejar criar outros arquivos `.cpp` para modularizar melhor seu projeto você pode fazê-lo; nesse caso lembre-se de alterar o script do `cmake` correspondente de maneira a incluir o novo arquivo fonte na lista de dependências do target `${APP_NAME}` com o comando `target_sources( ${APP_NAME} PRIVATE "seu_arquivo.cpp" )`.
 
@@ -155,4 +153,4 @@ Se os testes forem bem sucedidos, você deve encontrar uma saída como essa abai
 A submissão deve ser feita através do Sigaa, conforme explicitado na turma, bem como usando o seu repositório do github correspondente.
 
 --------
-&copy; DIMAp/UFRN 2021.
+&copy; DIMAp/IMD/UFRN 2021.
