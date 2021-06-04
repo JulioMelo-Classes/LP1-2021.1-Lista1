@@ -11,6 +11,19 @@ Adicionalmente, você deverá ter contato com alguns elementos da STL (_Standard
 
 # Suas Tarefas
 
+As tarefas a serem implementadas correspondem a cada um dos diretórios neste repositório (exceto os diretórios `scripts` e `pics`) sendo elas:
+
+- [negativos5](./negativos5)
+- [soma_vizinhos](./soma_vizinhos)
+- [intervalos](./intervalos)
+- [fibonacci](./fibonacci)
+- [minmax](./minmax)
+- [inverter](./inverter)
+- [filter](./filter)
+- [ponto_em_retangulo_1](./ponto_em_retangulo_1)
+- [ponto_em_retangulo_2](./ponto_em_retangulo_2)
+
+
 Para facilitar a implementação de suas respostas, você vai encontrar nesse repositório o código de suporte organizado em várias pastas, uma para cada questão da lista. Esse código já está preparado para compilar cada projeto individualmente através do uso de `cmake` e contém indicações sobre o que você precisa alterar através de comentários como `// TODO` espalhados por alguns arquivos `.cpp` e `.h`. Para você usufruir dessa infraestrutura de compilação e testagem disponível, é importante que você **não altere nenhum arquivo além do que for indicado nesse documento**.
 
 Em resumo, sua tarefa consiste em:
