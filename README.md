@@ -29,7 +29,17 @@ Conforme explicado no [PDF da lista de exercício](docs/lista_01.pdf) existem du
 
 Para os exercícios que solicitam a implementação de um programa, você deve editar apenas o arquivo `src/main.cpp`. Se você desejar criar outros arquivos `.cpp` para modularizar melhor seu projeto você pode fazê-lo; nesse caso lembre-se de alterar o script do `cmake` correspondente de maneira a incluir o novo arquivo fonte na lista de dependências do target `${APP_NAME}` com o comando `target_sources( ${APP_NAME} PRIVATE "seu_arquivo.cpp" )`.
 
-Para os exercícios que solicitam a implementação de uma função, você precisa apenas editar o arquivo `src/function.cpp`. Lá você vai encontrar o copo vazio da função que precisa ser desenvolvida.
+Nesta categoria você deve assumir que os dados de entrada para cada programa são lidos da **entrada padrão**, stdin, através da _operação de extração_(**>>**) do _objeto_ `std::cin`. Similarmente, a saída do programa deve ser enviada para a saída padrão, stdout, através do operador de _inseção_(**<<**) no _objeto_ `std::cout`.
+
+```c++
+int x;
+std::cin>> std::ws>>x; //equivalente à scanf(" %d",&x);
+std::cout<<x<<'\n'; //equivalente à scanf("%d\n",x);
+```
+
+Para os exercícios que solicitam a implementação de uma função, você precisa apenas editar o arquivo `src/function.cpp`. Lá você vai encontrar o corpo vazio da função que precisa ser desenvolvida. Neste caso, é importante que você não mude a assinatura da função específica, assim os testes automáticos funcionarão.
+
+No geral é importante que você siga à risca as instruções sobre a implementação dos exercícios, uma vez que as respostas são validadas de forma automática. De preferencia, não qualquer coisa nos testes automáticos, a memos que seja acordado com o professor.
 
 ## Dependências
 
@@ -140,11 +150,9 @@ Se os testes forem bem sucedidos, você deve encontrar uma saída como essa abai
 <!-- <img src="./pics/unit_test.png" width="550"> -->
 ![unit testing](./pics/unit_test.png)
 
-# Submissão do Trabalho
+# Submissão das Respostas
 
-A submissão do trabalho deve ser feita de 2 formas:
-1. Crie um arquivo compactado com todas as pastas contidas no pasta principal `list_basics+c++` e envie esse arquivo via Tarefa Virtual do SIGAA. **Não esqueça de remover a pasta `build` com todos os executáveis antes de compactar!!!**
-2. Registre (_commit_) todo o seu trabalho para o repositório do GitHub Classroom associado a esse [projeto]().
+A submissão deve ser feita através do Sigaa, conforme explicitado na turma, bem como usando o seu repositório do github correspondente.
 
 --------
 &copy; DIMAp/UFRN 2021.
