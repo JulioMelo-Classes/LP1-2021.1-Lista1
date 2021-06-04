@@ -57,3 +57,7 @@ e representados com quatro casas de precisão. Para definir a precisão use a fu
     </td>
   </tr>
 </table>
+
+## Conhecimentos Necessários
+
+Leitura de entrada padrão, escrita em saída padrão, laços, condicionais, _type casting_, saída formatada, uso de vetores.
