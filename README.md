@@ -44,13 +44,13 @@ Nesta categoria você deve assumir que os dados de entrada para cada programa s�
 
 ```c++
 int x;
-std::cin>> std::ws>>x; //equivalente à scanf(" %d",&x);
+std::cin>>std::ws>>x; //equivalente à scanf(" %d",&x);
 std::cout<<x<<'\n'; //equivalente à scanf("%d\n",x);
 ```
 
 Para os exercícios que solicitam a implementação de uma função, você precisa apenas editar o arquivo `src/function.cpp`. Lá você vai encontrar o corpo vazio da função que precisa ser desenvolvida. Neste caso, é importante que você não mude a assinatura da função específica, assim os testes automáticos funcionarão.
 
-No geral é importante que você siga à risca as instruções sobre a implementação dos exercícios, uma vez que as respostas são validadas de forma automática. De preferencia, não qualquer coisa nos testes automáticos, a memos que seja acordado com o professor.
+No geral é importante que você siga à risca as instruções sobre a implementação dos exercícios, uma vez que as respostas são validadas de forma automática. De preferencia, não modifique qualquer coisa nos testes automáticos, a memos que seja acordado com o professor.
 
 ## Dependências (precisam ser instalados no seu ambiente)
 
