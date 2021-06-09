@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.18)
+cmake_minimum_required(VERSION 3.0)
 project (FibBelowN VERSION 1.0 LANGUAGES CXX )
 
 #== find package, v3 version
@@ -27,7 +27,7 @@ add_subdirectory(tests)
 
 add_custom_target(
     run_tests
-    COMMAND ${TEST_NAME} 2> /dev/null 
+    COMMAND ${TEST_NAME}
     # COMMAND ${CMAKE_BINARY_DIR}/tests/tests
     DEPENDS ${LIB_NAME}
 )
