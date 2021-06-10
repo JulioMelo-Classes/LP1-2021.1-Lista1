@@ -19,7 +19,7 @@ As tarefas a serem implementadas correspondem a cada um dos diretórios neste re
 - [fibonacci](./fibonacci)
 - [minmax](./minmax)
 - [inverter](./inverter)
-- [filter](./filter)
+- ~~[filter](./filter)~~ (respostas no arquivo [filter_students.cpp](filter./src/filter_students.cpp))
 - [ponto_em_retangulo_1](./ponto_em_retangulo_1)
 - [ponto_em_retangulo_2](./ponto_em_retangulo_2)
 
@@ -146,21 +146,15 @@ Possível saída:
 <!-- <img src="./pics/cmake_build_fib.png" width="550"> -->
 ![cmake build](./pics/cmake_build_int.png)
 
-1. Se houver erro de compilação, corrija e volte ao passo anterior. Se a compilação for bem sucedida, prossiga com o comando abaixo para entrar na pasta `build` e executar o comando:
+5. Se houver erro de compilação, corrija e volte ao passo anterior. Se a compilação for bem sucedida, prossiga com o comando abaixo para entrar na pasta `build` e executar o comando:
 
 ```
 cmake --build . --target run_tests
 ```
 
-1. Observe os resultados dos testes do passo anterior. Se algum teste falhar você deve corrigir o problema e compilar o projeto novamente, como descrito no passo 4. Se você estiver na pasta `build` e desejar compilar novamente, pode executar os comandos abaixo, ao invés de retornar ao passo 4 (que deve ser executado de fora do `build`) no linux:
+6. Observe os resultados dos testes do passo anterior. Se algum teste falhar você deve corrigir o problema e compilar o projeto novamente, como descrito no passo 4. Se você estiver na pasta `build` e desejar compilar novamente, pode executar os comandos abaixo, ao invés de retornar ao passo 4 (que deve ser executado de fora do `build`) no linux:
 ```
-cmake --build .
-./tests/all_tests
-```
-ou no windows
-```
-cmake --build .
-tests/Debuig/all_tests.exe
+cmake --build . --target run_tests
 ```
 
 Se os testes forem bem sucedidos, você deve encontrar uma saída como essa abaixo:
