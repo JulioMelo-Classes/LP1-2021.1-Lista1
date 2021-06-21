@@ -19,7 +19,7 @@ void TestManager::result( const std::string &key, bool value, int line )
     auto old_entry = tests_record[ key ];
     // We only update if the previous result is TRUE or UNDEFINED.
     // Otherwise, we keep the first failure.
-    if ( old_entry.m_result == Entry::result_t::SUCCESS or
+    if ( old_entry.m_result == Entry::result_t::SUCCESS ||
          old_entry.m_result == Entry::result_t::UNDEFINED )
     {
         tests_record[key].m_result = value ? Entry::result_t::SUCCESS : Entry::result_t::FAILED ; // Update the result.
@@ -47,7 +47,7 @@ void TestManager::summary(void) const
     for ( const auto & t : sorted_list )
     {
         print_test_result( t.first, t.second );
-        if ( not t.second.m_enabled ) n_disabled++;
+        if ( ! t.second.m_enabled ) n_disabled++;
         else if ( t.second.m_result == TestManager::Entry::result_t::SUCCESS ) n_successful++;
         else if ( t.second.m_result == TestManager::Entry::result_t::FAILED ) n_failed++;
         else if ( t.second.m_result == TestManager::Entry::result_t::UNDEFINED ) n_undefined++;
