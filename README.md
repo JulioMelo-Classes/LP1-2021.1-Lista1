@@ -19,7 +19,6 @@ As tarefas a serem implementadas correspondem a cada um dos diretórios neste re
 - [fibonacci](./fibonacci)
 - [minmax](./minmax)
 - [inverter](./inverter)
-- ~~[filter](./filter)~~ (respostas no arquivo [filter_students.cpp](filter./src/filter_students.cpp))
 - [ponto_em_retangulo_1](./ponto_em_retangulo_1)
 - [ponto_em_retangulo_2](./ponto_em_retangulo_2)
 
